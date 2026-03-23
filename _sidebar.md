@@ -3,5 +3,6 @@
 - 学习笔记
   - [Python 基础](notes/python-basic.md)
   - [JavaScript 进阶](notes/js-advanced.md)
+  - [Java](notes/java.md)
 - 生活随笔
   - [2026 旅行计划](life/travel-2026.md)

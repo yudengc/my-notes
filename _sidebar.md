@@ -1,8 +1,98 @@
-- 首页
-  - [介绍](README.md)
-- 学习笔记
-  - [Python 基础](notes/python-basic.md)
-  - [JavaScript 进阶](notes/js-advanced.md)
-  - [Java](notes/java.md)
-- 生活随笔
-  - [2026 旅行计划](life/travel-2026.md)
+- **👋 关于本站**
+  - [🏠 首页 & 导读](README.md)
+  - [🧠 知识体系脑图](mindmap.md)
+  - [🛠️ 开发环境配置](env-setup.md)
+
+- **☕ Java 核心进阶**
+  - **JDK 新特性**
+    - [Java 21/24 虚拟线程](java/virtual-threads.md)
+    - [模式匹配与 Record](java/pattern-matching.md)
+    - [ZGC 垃圾回收器](java/zgc-tuning.md)
+  - **并发编程 (JUC)**
+    - [线程池最佳实践](java/thread-pool-best-practice.md)
+    - [锁机制: Synchronized vs ReentrantLock](java/locks.md)
+    - [AQS 原理深度解析](java/aqs-principle.md)
+    - [CompletableFuture 异步编排](java/completable-future.md)
+  - **JVM 深入**
+    - [内存模型 (JMM)](java/jmm.md)
+    - [类加载机制](java/classloader.md)
+    - [OOM 排查实战](java/oom-debugging.md)
+    - [Arthas 在线诊断](java/arthas-usage.md)
+  - **框架生态**
+    - [Spring Boot 3 核心原理](spring/boot-core.md)
+    - [Spring Cloud Alibaba 全家桶](spring/cloud-alibaba.md)
+    - [MyBatis Plus 高级用法](spring/mybatis-plus.md)
+
+- **🐍 Python & 多语言**
+  - [Python 快速上手 (For Java Dev)](python/basics-for-java.md)
+  - [常用脚本工具集](python/scripts-collection.md)
+  - [Java 与 Python 互调 (Py4J/Jython)](python/java-python-interop.md)
+
+- **💾 数据库与存储**
+  - **MySQL**
+    - [索引优化实战](db/mysql-index-tuning.md)
+    - [事务隔离与锁机制](db/mysql-transactions.md)
+    - [分库分表方案 (ShardingSphere)](db/sharding-sphere.md)
+    - [SQL 调优案例分析](db/sql-examples.md)
+  - **Redis**
+    - [核心数据结构与应用场景](redis/data-structures.md)
+    - [持久化机制 (RDB/AOF)](redis/persistence.md)
+    - [缓存穿透/击穿/雪崩](redis/cache-problems.md)
+    - [Redis 分布式锁实现](redis/distributed-lock.md)
+    - [Redis Cluster 集群原理](redis/cluster.md)
+
+- **🚀 消息队列与大数据**
+  - **Kafka**
+    - [架构设计与高吞吐原理](kafka/architecture.md)
+    - [消息不丢失/不重复消费](kafka/reliability.md)
+    - [Rebalance 机制详解](kafka/rebalance.md)
+  - **RocketMQ / RabbitMQ**
+    - [选型对比分析](mq/comparison.md)
+    - [事务消息实现](mq/transaction-msg.md)
+  - **大数据中间件**
+    - [Elasticsearch 搜索优化](bigdata/es-tuning.md)
+    - [Flink 实时计算入门](bigdata/flink-basics.md)
+    - [Hadoop/Spark 核心概念](bigdata/hadoop-spark.md)
+
+- **☸️ 云原生 & 运维 (K8s)**
+  - **Docker**
+    - [Dockerfile 最佳实践](k8s/docker-best-practices.md)
+    - [容器网络与存储](k8s/docker-network.md)
+  - **Kubernetes (K8s)**
+    - [核心组件架构](k8s/architecture.md)
+    - [Pod/Deployment/Service 详解](k8s/core-concepts.md)
+    - [Helm 包管理工具](k8s/helm.md)
+    - [K8s 故障排查手册](k8s/troubleshooting.md)
+  - **CI/CD**
+    - [GitHub Actions 自动化部署](devops/github-actions.md)
+    - [Jenkins Pipeline 配置](devops/jenkins.md)
+
+- **🤖 AI 与大模型工程化**
+  - **LLM 基础**
+    - [大模型核心概念 (Transformer, Token)](ai/llm-basics.md)
+    - [Prompt Engineering 技巧](ai/prompt-engineering.md)
+  - **Java 集成 LLM**
+    - [Spring AI 实战指南](ai/spring-ai.md)
+    - [LangChain4j 开发手册](ai/langchain4j.md)
+    - [RAG (检索增强生成) 架构实现](ai/rag-architecture.md)
+  - **模型部署**
+    - [本地运行 Ollama + 模型](ai/ollama-setup.md)
+    - [向量数据库 (Milvus/Pgvector)](ai/vector-db.md)
+
+- **🏗️ 系统架构与设计**
+  - **设计模式**
+    - [23 种设计模式实战](arch/design-patterns.md)
+    - [DDD 领域驱动设计](arch/ddd-basics.md)
+  - **分布式架构**
+    - [分布式事务解决方案](arch/distributed-transaction.md)
+    - [微服务治理 (限流/熔断)](arch/microservice-governance.md)
+    - [分布式 ID 生成策略](arch/distributed-id.md)
+  - **安全认证**
+    - [OAuth2.0 与 JWT](arch/oauth2-jwt.md)
+    - [Spring Security 6 配置](arch/spring-security.md)
+
+- **📝 踩坑记录 & 面试**
+  - [🐛 生产环境 Bug 复盘](tricks/bug-reviews.md)
+  - [⚡ 性能优化案例](tricks/performance-tuning.md)
+  - [🎯 高频面试题解析](tricks/interview-questions.md)
+  - [📚 推荐书单与资源](tricks/resources.md)

@@ -2,6 +2,7 @@
   - [🏠 首页 & 导读](README.md)
   - [🧠 知识体系脑图](mindmap.md)
   - [🛠️ 开发环境配置](env-setup.md)
+  - [每周总结]
 
 - **☕ Java 核心进阶**
   - **JDK 新特性**

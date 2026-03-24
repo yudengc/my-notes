@@ -4,7 +4,7 @@
   - [🧠 知识体系脑图 (MindMap)](plan/mindmap.md)
   - [📝 每周学习打卡 & 总结](plan/weekly-log.md)
   - [🛠️ 开发环境配置](env-setup.md)
-  - [wiki模板](template.md)
+  - [📝 wiki模板](template.md)
 
 - **☕ Phase 1: Java 深度夯实与云原生 (第 1-2 月)**
   - **JDK 21+ 新特性实战**

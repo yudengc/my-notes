@@ -74,6 +74,9 @@
   - **Python 辅助开发**
     - [📝 Python 快速上手 (For Java Dev)](python/basics-for-java.md)
     - [📝 Java 与 Python 互调方案](python/java-python-interop.md)
+  - **AI开发工具**    
+    - [🔜 openclaw使用心得](ai/openclaw.md)
+    - [🔜 opencode使用心得](ai/opencode.md)
 
 - **🏗️ Phase 4: 架构融合与综合实战 (第 6 月)**
   - **分布式架构核心**

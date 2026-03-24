@@ -1,99 +1,115 @@
-- **👋 关于本站**
-  - [🏠 首页 & 导读](README.md)
-  - [🧠 知识体系脑图](mindmap.md)
+- **🗺️ 导航与规划**
+  - [🏠 首页 & 学习宣言](README.md)
+  - [📅 6 个月进阶计划总览](plan/roadmap-6months.md)
+  - [🧠 知识体系脑图 (MindMap)](plan/mindmap.md)
+  - [📝 每周学习打卡 & 总结](plan/weekly-log.md)
   - [🛠️ 开发环境配置](env-setup.md)
-  - [每周总结]
+  - [wiki模板](template.md)
 
-- **☕ Java 核心进阶**
-  - **JDK 新特性**
-    - [Java 21/24 虚拟线程](java/virtual-threads.md)
-    - [模式匹配与 Record](java/pattern-matching.md)
-    - [ZGC 垃圾回收器](java/zgc-tuning.md)
-  - **并发编程 (JUC)**
-    - [线程池最佳实践](java/thread-pool-best-practice.md)
-    - [锁机制: Synchronized vs ReentrantLock](java/locks.md)
-    - [AQS 原理深度解析](java/aqs-principle.md)
-    - [CompletableFuture 异步编排](java/completable-future.md)
+- **☕ Phase 1: Java 深度夯实与云原生 (第 1-2 月)**
+  - **JDK 21+ 新特性实战**
+    - [🔜 虚拟线程 (Virtual Threads) 原理与压测](java/virtual-threads-deep-dive.md)
+    - [🔜 Record 模式匹配在 DTO 转换中的应用](java/record-pattern-matching.md)
+    - [🔜 ZGC 低延迟垃圾回收器调优实战](java/zgc-tuning-guide.md)
+    - [📝 类加载机制与内存模型 (JMM)](java/classloader-jmm.md)
+  - **高并发编程 (JUC) 进阶**
+    - [🔜 手写一个简易版线程池](java/diy-thread-pool.md)
+    - [🔜 AQS 源码逐行解析 (ReentrantLock)](java/aqs-source-code.md)
+    - [🔜 CompletableFuture 异步编排最佳实践](java/completable-future-patterns.md)
+    - [📝 锁机制对比: Synchronized vs ReentrantLock](java/locks.md)
   - **JVM 深入**
     - [内存模型 (JMM)](java/jmm.md)
     - [类加载机制](java/classloader.md)
-    - [OOM 排查实战](java/oom-debugging.md)
-    - [Arthas 在线诊断](java/arthas-usage.md)
+  - **JVM 诊断与调优**
+    - [🔜 OOM 排查实战与 Arthas 在线诊断](java/oom-debugging-arthas.md)
+  - **K8s 与容器化部署**
+    - [🔜 Dockerfile 多阶段构建优化镜像体积](k8s/docker-multi-stage.md)
+    - [🔜 K8s 核心概念：Pod, Service, Ingress 详解](k8s/core-concepts-lab.md)
+    - [🔜 使用 Helm 部署 Spring Boot 应用到 K8s](k8s/helm-spring-boot.md)
+    - [📝 K8s 故障排查手册](k8s/troubleshooting.md)
   - **框架生态**
     - [Spring Boot 3 核心原理](spring/boot-core.md)
     - [Spring Cloud Alibaba 全家桶](spring/cloud-alibaba.md)
     - [MyBatis Plus 高级用法](spring/mybatis-plus.md)
-
+    
 - **🐍 Python & 多语言**
   - [Python 快速上手 (For Java Dev)](python/basics-for-java.md)
   - [常用脚本工具集](python/scripts-collection.md)
   - [Java 与 Python 互调 (Py4J/Jython)](python/java-python-interop.md)
 
-- **💾 数据库与存储**
-  - **MySQL**
-    - [索引优化实战](db/mysql-index-tuning.md)
-    - [事务隔离与锁机制](db/mysql-transactions.md)
-    - [分库分表方案 (ShardingSphere)](db/sharding-sphere.md)
-    - [SQL 调优案例分析](db/sql-examples.md)
-  - **Redis**
-    - [核心数据结构与应用场景](redis/data-structures.md)
-    - [持久化机制 (RDB/AOF)](redis/persistence.md)
-    - [缓存穿透/击穿/雪崩](redis/cache-problems.md)
-    - [Redis 分布式锁实现](redis/distributed-lock.md)
-    - [Redis Cluster 集群原理](redis/cluster.md)
-
-- **🚀 消息队列与大数据**
-  - **Kafka**
+- **🚀 Phase 2: 大数据中间件与实时计算 (第 3 月)**
+  - **Kafka 消息队列深潜**
     - [架构设计与高吞吐原理](kafka/architecture.md)
-    - [消息不丢失/不重复消费](kafka/reliability.md)
-    - [Rebalance 机制详解](kafka/rebalance.md)
+    - [🔜 Kafka 高吞吐原理：零拷贝与顺序写](kafka/high-throughput-principle.md)
+    - [🔜 实战：保证消息不丢失和不重复消费](kafka/reliability-patterns.md)
+    - [🔜 Kafka Streams vs Flink 选型分析](kafka/streams-vs-flink.md)
+    - [📝 Rebalance 机制详解](kafka/rebalance.md)
   - **RocketMQ / RabbitMQ**
     - [选型对比分析](mq/comparison.md)
     - [事务消息实现](mq/transaction-msg.md)
-  - **大数据中间件**
-    - [Elasticsearch 搜索优化](bigdata/es-tuning.md)
-    - [Flink 实时计算入门](bigdata/flink-basics.md)
-    - [Hadoop/Spark 核心概念](bigdata/hadoop-spark.md)
+  - **Elasticsearch 与搜索引擎**
+    - [🔜 ES 倒排索引原理图解](bigdata/es-inverted-index.md)
+    - [🔜 复杂查询 DSL 与 性能优化](bigdata/es-query-optimization.md)
+  - **Flink 实时计算入门**
+    - [🔜 Flink 窗口机制 (Window) 与水位线 (Watermark)](bigdata/flink-window-watermark.md)
+    - [🔜 实战：实时统计用户点击流](bigdata/flink-realtime-count.md)
+    - [📝 Hadoop/Spark 核心概念速查](bigdata/hadoop-spark.md)
 
-- **☸️ 云原生 & 运维 (K8s)**
-  - **Docker**
-    - [Dockerfile 最佳实践](k8s/docker-best-practices.md)
-    - [容器网络与存储](k8s/docker-network.md)
-  - **Kubernetes (K8s)**
-    - [核心组件架构](k8s/architecture.md)
-    - [Pod/Deployment/Service 详解](k8s/core-concepts.md)
-    - [Helm 包管理工具](k8s/helm.md)
-    - [K8s 故障排查手册](k8s/troubleshooting.md)
-  - **CI/CD**
-    - [GitHub Actions 自动化部署](devops/github-actions.md)
-    - [Jenkins Pipeline 配置](devops/jenkins.md)
+- **🤖 Phase 3: AI 工程化与 Java 集成 (第 4-5 月) 🔥核心重点**
+  - **LLM 基础与大模型原理**
+    - [🔜 Transformer 架构通俗理解](ai/transformer-explained.md)
+    - [🔜 Tokenizer 原理与 Prompt Engineering 技巧](ai/prompt-engineering-guide.md)
+    - [🔜 本地部署 LLM: Ollama + Llama 3 实战](ai/ollama-local-setup.md)
+  - **Java 对接大模型 (Spring AI & LangChain4j)**
+    - [🔜 Spring AI 快速入门：Hello World](ai/spring-ai-hello-world.md)
+    - [🔜 LangChain4j 核心组件：Chain, Agent, Memory](ai/langchain4j-core.md)
+    - [🔥 实战：用 Java 写一个 PDF 文档问答机器人](ai/java-pdf-qa-bot.md)
+  - **RAG (检索增强生成) 架构实战**
+    - [🔜 向量数据库选型：Milvus vs Pgvector vs ES](ai/vector-db-comparison.md)
+    - [🔜 文本切片 (Chunking) 策略与 Embedding 模型](ai/rag-chunking-strategy.md)
+    - [🔥 完整实战：构建企业知识库问答系统](ai/rag-full-stack-project.md)
+  - **AI Agent (智能体) 开发**
+    - [🔜 Function Calling 原理与 Java 实现](ai/function-calling-java.md)
+    - [🔥 实战：打造一个能查天气、查数据库的 AI Agent](ai/build-ai-agent.md)
+  - **Python 辅助开发**
+    - [📝 Python 快速上手 (For Java Dev)](python/basics-for-java.md)
+    - [📝 Java 与 Python 互调方案](python/java-python-interop.md)
 
-- **🤖 AI 与大模型工程化**
-  - **LLM 基础**
-    - [大模型核心概念 (Transformer, Token)](ai/llm-basics.md)
-    - [Prompt Engineering 技巧](ai/prompt-engineering.md)
-  - **Java 集成 LLM**
-    - [Spring AI 实战指南](ai/spring-ai.md)
-    - [LangChain4j 开发手册](ai/langchain4j.md)
-    - [RAG (检索增强生成) 架构实现](ai/rag-architecture.md)
-  - **模型部署**
-    - [本地运行 Ollama + 模型](ai/ollama-setup.md)
-    - [向量数据库 (Milvus/Pgvector)](ai/vector-db.md)
+- **🏗️ Phase 4: 架构融合与综合实战 (第 6 月)**
+  - **分布式架构核心**
+    - [🔜 高并发下的缓存一致性方案 (Redis + DB)](arch/cache-consistency.md)
+    - [🔜 分布式事务最终一致性方案 (RocketMQ)](arch/final-consistency.md)
+    - [🔜 微服务架构中的 AI 服务网关设计](arch/ai-gateway-design.md)
+    - [📝 分布式 ID 生成策略](arch/distributed-id.md)
+  - **数据库深度优化**
+    - [📝 MySQL 索引优化与事务隔离](db/mysql-index-tuning.md)
+    - [📝 分库分表方案 (ShardingSphere)](db/sharding-sphere.md)
+  - **综合项目：智能运维助手 (AIOps)**
+    - [🔜 项目立项与架构设计](project/aiops-design.md)
+    - [🔜 日志异常检测算法集成](project/log-anomaly-detection.md)
+    - [🔜 基于自然语言的 SQL 生成器 (Text-to-SQL)](project/text-to-sql.md)
 
-- **🏗️ 系统架构与设计**
-  - **设计模式**
-    - [23 种设计模式实战](arch/design-patterns.md)
-    - [DDD 领域驱动设计](arch/ddd-basics.md)
-  - **分布式架构**
-    - [分布式事务解决方案](arch/distributed-transaction.md)
-    - [微服务治理 (限流/熔断)](arch/microservice-governance.md)
-    - [分布式 ID 生成策略](arch/distributed-id.md)
-  - **安全认证**
-    - [OAuth2.0 与 JWT](arch/oauth2-jwt.md)
+- **🧰 基础知识库 (按技术栈索引)**
+  - **Spring 生态**
+    - [Spring Boot 3 核心原理](spring/boot-core.md)
+    - [Spring Cloud Alibaba 全家桶](spring/cloud-alibaba.md)
+    - [MyBatis Plus 高级用法](spring/mybatis-plus.md)
     - [Spring Security 6 配置](arch/spring-security.md)
+  - **Redis 专题**
+    - [核心数据结构与应用场景](redis/data-structures.md)
+    - [持久化机制 (RDB/AOF)](redis/persistence.md)
+    - [缓存穿透/击穿/雪崩解决方案](redis/cache-problems.md)
+    - [Redis 分布式锁实现](redis/distributed-lock.md)
+  - **其他中间件**
+    - [RocketMQ/RabbitMQ 选型对比](mq/comparison.md)
+    - [事务消息实现原理](mq/transaction-msg.md)
+  - **设计模式与 DDD**
+    - [23 种设计模式实战](arch/design-patterns.md)
+    - [DDD 领域驱动设计基础](arch/ddd-basics.md)
+    - [OAuth2.0 与 JWT 认证](arch/oauth2-jwt.md)
 
-- **📝 踩坑记录 & 面试**
-  - [🐛 生产环境 Bug 复盘](tricks/bug-reviews.md)
-  - [⚡ 性能优化案例](tricks/performance-tuning.md)
-  - [🎯 高频面试题解析](tricks/interview-questions.md)
-  - [📚 推荐书单与资源](tricks/resources.md)
+- **🎁 工具箱 & 资源**
+  - [🐛 生产环境 Bug 复盘集合](tricks/bug-reviews.md)
+  - [⚡ 性能调优案例 (JVM/SQL/K8s)](tricks/performance-tuning.md)
+  - [🎯 面试题库：Java + AI 方向](tricks/interview-ai-java.md)
+  - [📚 推荐书单与优质资源](tricks/resources.md)

@@ -6,6 +6,11 @@
   - [🛠️ 开发环境配置](env-setup.md)
   - [📝 wiki模板](template.md)
 
+- **🔥 第一优先级：AI Agent 系统学习**
+  - [📚 AI Agent 学习计划（当前重点）](plan/ai-agent-study.md)
+  - 基于 [深入理解 AI Agent](https://github.com/bojieli/ai-agent-book)，10 章 + 95 个实验
+  - 核心公式：**Agent = LLM + 上下文 + 工具**
+
 - **☕ Phase 1: Java 深度夯实与云原生 (第 1-2 月)**
   - **JDK 21+ 新特性实战**
     - [🔜 虚拟线程 (Virtual Threads) 原理与压测](java/virtual-threads-deep-dive.md)
